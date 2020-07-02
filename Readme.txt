@@ -11,8 +11,8 @@ Server-Re-Deploy
         heroku login
         git add .
         git commit -m 'another commit'
-        git push heroku master
-        Unter https://jorroch-consulting.herokuapp.com/ prüfen
+        git push origin master
+        Unter Heroku Website -> Deploy ganz unten Manual Deploy aus Github triggern
 
 
 MLab.com -> mongodb+srv://admin:<password>@cluster0-xzovj.mongodb.net/test?retryWrites=true&w=majority
