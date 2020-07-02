@@ -13,6 +13,21 @@ const TodoSchema = mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	priority: {
+		type: Number,
+		required: true,
+		default: 4,
+	},
+	remainingHours: {
+		type: Number,
+		required: true,
+		default: 1,
+	},
+	remainingMinutes: {
+		type: Number,
+		required: true,
+		default: 0,
+	},
 });
 
 const TodoListSchema = mongoose.Schema({

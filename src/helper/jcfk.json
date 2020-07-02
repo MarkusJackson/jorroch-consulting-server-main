@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "jorroch-consulting",
+  "private_key_id": "53346182885a63a94154f77ea9323b6f2e2ad596",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCjEtnuhyddAyvg\nkaIUz82hSElGUoZtwL58WOXeVslzwdQmquqgPmp5jSiM0DUV2CnFPOvs7pAwVYEK\nXVvJzry4qY+lWnz1EQiRsVMURUKGKL5kf1eylspAveMbKjUSp1KOcLWTJpXaQDnI\nsZxzjP+enkcBUIudf8w4WKT9KFCiNiDwghEx3e3OiE/6vq3qTbcCXlD9JEPGmLft\nQcjYD26A/bLv10ync+dB4cFAmdRqOL07uvBz4jiRSDJpMzkq9Vb3hgvJ8wqLztV0\ncRJtDBHJUkA1FHvh12DCKQ5hNWaheifNmuU5e8ULJr50IVJF0pakX0BpTfN8Rumq\nuZ0zehn/AgMBAAECggEAMLFjU58VuOdGhcLWo+I842jDQHVJ4KHJ/zVIRjCh7Ke2\n4mjssDaS8oKc1hchksk+B8AeLlw5v8T4SBECZGsP3Q/8bYJsh3yzk1Vgmk/oAklO\nOJHxrMjr0ZMhqi3bNRuzQgcToMHHwyikWHH4ZmR2u3VFfHYBimDrqPOHKHSORzDp\n0ecTJbHz3MW5SFU2i/O1zdIG6NwBkdJCyzkLYfVCtFEZOPI86zfuSawU/FnFUk8H\nwFRW6VyjVPvNPRaMrivNbIRlP0nWocUqFRmgsn27gsuKBSelladOrLjf/7uHAMqh\nGdFWsMXfK6FXz9jC5csWXE5vtOyna0YKbv0eVXVZmQKBgQDiXDmPTf0YDfDNHV+H\npK3d6nN91LgUxs0qw22sVz114Ti4oXKiSzWhF5gCphxxm9Mm8i6IWx+0yxzTgFLh\nrQe87KyFScZEC/oGqv9kKBqrT3Hk2ciOrBbWM6faS0CmcfLKHSRRFBIeorIqz7p3\nUEYjzkS+J0wptYdRjDDHY6u7nQKBgQC4bTV8UfzIon7qnd2WeTCg9w7HCE6+YRZp\nQqJM8gyBDD9MuMGZ5bXB9uxy5Iy45bRGJI027PsFAJC5/MbVxnlfzCndUQAaCFFM\nFP70enfyoPpC78s0NvUCLWP0uNu3JFKHjwUjhcDu7Xcv9JzSUV7r54FRxYPHWBUd\nUabDLPC/SwKBgQCc/dOZ9T/8x+Zji+SugeNoTuussLS/DCZNa18MMTFaKUsamjaU\nIs9eG6v84lJF5QnsL/lf7rstu9URRyW0iTodqJP6mXEdzqSorT4Vq87bU20tiHIV\nqXrpMshOmPSMu+jkjpOae+4ZO0OQd6PejlknCi8ZJs4m+1SPlUhbcWAw7QKBgQCm\ndWuhGh8euAv1lyc5eYj6wAMGgekQzHB98TasXIwMrhE0Hk4fqcWznDsuODsLZ8ie\nxr7upFas3SXDuPN+X/WNEal3qHR/CqLWGN1FrIQ26jT31ZeDOVdK780YRQGK+63B\nzMTGmyLYhFzfW9lvuyIBqqJ+O9gFROtJ2zi5UQa6oQKBgGz84lsr4KJS70iAragG\nUJxzmdJBo5lKtt42RcPi5jj6JeFTatnLFAO+HNfySVW3pTUfaJuHEcfTRyd+4laU\nWMBk0Yg0OrOPf6JnYeSbV3RIiTVwqt34p2cdEyrNCz5rQdxqgGccwE+aR+/k5+QG\nsyHQMdcTqXSO/AzIHKYiGf+2\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-smyup@jorroch-consulting.iam.gserviceaccount.com",
+  "client_id": "107971895963565477851",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-smyup%40jorroch-consulting.iam.gserviceaccount.com"
+}

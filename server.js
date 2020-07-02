@@ -4,6 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('dotenv/config');
+const verifyFirebaseIdToken = require('./src/helper/AuthMiddleware');
 
 const app = express();
 
@@ -21,7 +22,7 @@ app.use(bodyParser.json());
 const server_router = require('./src/server/routes');
 const todo_app_router = require('./src/apps/todo/routes');
 app.use(server_router);
-app.use('/app/todo', todo_app_router);
+app.use('/app/todo', verifyFirebaseIdToken, todo_app_router);
 
 // Others
 app.use('/config', () => {
@@ -31,9 +32,13 @@ app.use('/config', () => {
 /*
  * Connect to DB
  */
-mongoose.connect(process.env.DB_CONNECTION, { useUnifiedTopology: true, useNewUrlParser: true }, () => {
-	console.log('Conntected to mongoDb.');
-});
+mongoose.connect(
+	process.env.DB_CONNECTION || 'mongodb+srv://admin:admin@cluster0-xzovj.mongodb.net/jorroch-consulting?retryWrites=true&w=majority',
+	{ useUnifiedTopology: true, useNewUrlParser: true },
+	() => {
+		console.log('Conntected to mongoDb.');
+	}
+);
 
 /*
  * Start listening

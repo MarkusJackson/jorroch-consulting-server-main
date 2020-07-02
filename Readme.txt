@@ -21,3 +21,8 @@ MLab.com -> mongodb+srv://admin:<password>@cluster0-xzovj.mongodb.net/test?retry
 dotenv -> Um sensitive Daten in eine .env Datei zu packen
 
 body-parser -> Parsed requests im router zu JSON
+
+npm install firebase-admin -> Um im AuthHelper den Token zu verifiyen. Man muss dazu erst auf der Firebase-Console (Firebase Webstie - Projekteinstellungen - Dienstkonten)
+        eine json Datei erstellen. Diese enthält die Zugangsknoten und einen private Key. Die Datei gilt es zu sichern. Optimalerweise setzt man eine Umgebungsvariable unter Windows/Linux
+        oder macht in der Powershell "$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\service-account-file.json"". Ich habe das jetzt im Code gemacht, was unsicher ist. 
+        Beschreibung von Google siehe unter: https://firebase.google.com/docs/admin/setup
