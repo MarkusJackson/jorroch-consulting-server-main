@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/config', (req, res) => {
+	console.log('Requesting config-site');
 	// res.send({ response: 'Server is up and running.' }).status(200);
 	res.send('<h3>This could be the config, if I had one.</h3>').status(200);
 });

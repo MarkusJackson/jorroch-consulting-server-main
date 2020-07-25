@@ -15,6 +15,7 @@ admin.initializeApp({
 */
 
 const verifyFirebaseIdToken = async (req, res, next) => {
+	console.log('Checking Access Token');
 	const idToken = req.header('firebase-idToken');
 	if (idToken === 'undefined') {
 		const errorMessage = 'Access Denied: No access token sent.';
@@ -22,7 +23,9 @@ const verifyFirebaseIdToken = async (req, res, next) => {
 		return res.status(403).json(errorMessage);
 	}
 	try {
+		console.log('Token found, requesting google for check: ' + idToken);
 		const decodedToken = await admin.auth().verifyIdToken(idToken);
+		console.log('Google answering with decoded token: ' + JSON.stringify(decodedToken));
 		req.decodedUID = decodedToken.uid;
 		return next();
 	} catch (error) {

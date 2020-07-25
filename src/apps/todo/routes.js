@@ -36,14 +36,19 @@ router.post('/init', async (req, res) => {
 });
 
 router.get('/data', async (req, res) => {
-	// console.log('App-Todo -> Get-Whole-Data-Request for: ', req.query);
-	const todoApp = await TodoApp.findOne({ userid: req.decodedUID });
+	console.log('App-Todo -> Get-Whole-Data-Request for: ', req.decodedUID);
+	try {
+		const todoApp = await TodoApp.findOne({ userid: req.decodedUID });
+	} catch (err) {
+		console.log('Error getting data for user: ' + req.decodedUID + ' - ' + err);
+		return res.status(500).send("Could not load data for user with id '" + req.decodedUID + "' -> " + err);
+	}
 	if (!todoApp) return res.status(404).send("No data for user with id '" + req.decodedUID + "' found");
 	res.status(200).json(todoApp);
 });
 
 router.post('/data', async (req, res) => {
-	// console.log('Put-Data-Request-Body unformatted: ', req.body);
+	console.log('Put-Data-Request-Body unformatted: ', req.body);
 	console.log('Todo-App: Updating todo app content for user: ', req.decodedUID);
 	const appObject = new TodoApp(req.body);
 	// console.log('Put-Data-Request tansformed to Schema-Object.toJson(): ', JSON.stringify(appObject));
